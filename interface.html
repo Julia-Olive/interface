@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENTER Tech Edu: Acesso ao site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*Zera as configurações do browser*/
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        text-decoration: none;
+        list-style: none;
+
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #7d71f6;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrapper {
+        width: 30%;
+        text-align: center;
+
+        background: white;
+        padding: 10px;
+        height: 420px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+
+        gap: 25px;
+
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .logo {
+        width: 50%;
+      }
+
+      .form {
+        padding: 10px;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #ccc;
+
+        width: 100%;
+      }
+
+      .input-with-icon {
+        position: relative;
+      }
+
+      .input-with-icon input {
+        padding-left: 30px; /* Espaço para o ícone */
+      }
+
+      .input-with-icon::before {
+        content: ""; /* Criação do elemento antes do input */
+        position: absolute;
+        left: 10px; /* Posicionamento do ícone à esquerda do input */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-image: url("./assets/image/eyes.svg");
+        background-size: cover;
+      }
+
+      .forget-password a {
+        color: #6b6b6b;
+      }
+
+      .button {
+        background: #4b4494;
+        border: none;
+        color: white;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <a href="https://home.entertechedu.com">
+          <h2>
+            <img
+              src="https://home.entertechedu.com/pluginfile.php/1/core_admin/logo/0x200/1689028788/ENT_Assinatura%20sem%20codificador%20para%20fundo%20branco.png"
+              title="ENTER Tech Edu"
+              alt="ENTER Tech Edu"
+              class="logo"
+            />
+          </h2>
+        </a>
+
+        <form>
+          <div class="input-with-icon">
+            <label for="username" class="sr-only">
+              Informe o seu login ou e-mail
+            </label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form"
+              placeholder="Informe o seu login ou e-mail"
+            />
+          </div>
+          <div class="input-with-icon">
+            <label for="username" class="sr-only"> Senha </label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form"
+              placeholder="Senha"
+            />
+          </div>
+          <div class="forget-password">
+            <a
+              class="rui-login-forgot-btn"
+              href="https://home.entertechedu.com/login/forgot_password.php"
+              >Esqueceu o seu usuário ou senha?</a
+            >
+          </div>
+
+          <button type="submit" class="button">Acessar</button>
+        </form>
+
+        <hr class="hr-small" />
+        <div class="rui-potentialidplist mt-3 text-center">
+          <p class="small text-center">Autenticar usando sua conta em:</p>
+          <div class="row no-gutters mt-1">
+            <div class="rui-potentialidp w-100 mt-1">
+              <a
+                href="https://home.entertechedu.com/auth/oauth2/login.php?id=1&amp;wantsurl=https%3A%2F%2Fhome.entertechedu.com%2Fpluginfile.php%2F49954%2Fmod_resource%2Fcontent%2F2%2FSHIFT%2520-%25201%25C2%25BA%2520Hackathon%2520-%2520recria%25C3%25A7%25C3%25A3o%2520de%2520sites%2520famosos.pdf&amp;sesskey=kmFiDvkeRv"
+                title="Google"
+                class="btn btn-outline-secondary mt-1 w-100"
+              >
+                <img
+                  src="https://accounts.google.com/favicon.ico"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <span class="rui-potentialidp--name ml-3">Google</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <p>
+            Primeira vez aqui?
+              <a href="#"
+                >Crie sua conta.</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
